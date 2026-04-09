@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE110</title>
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Team 14 — Group Kickoff Meeting</h1>
+        <p>CSE 110: Software Engineering</p>
+        <nav>
+            <a href="#agenda">Agenda </a> |
+            <a href="#new-business">New Business </a> |
+            <a href="#media">Media </a> |
+            <a href="#form">Feedback Form </a>
+        </nav>
+    </header>
+    <hr>
+    <!-- main content -->
+    <main>
+        <section id="meeting-info">
+            <h2>Meeting Info</h2>
+            <p>
+                <b>Topic:</b> Kickoff — Group Contract, Branding, Bonding Event &amp; Repo Setup
+            </p>
+            <p>
+                <b>Date:</b> April 8, 2026
+            </p>
+            <p>
+                <b>Location:</b> Library
+            </p>
+        </section>
+        <hr>
+
+        <section id="attendanc">
+            <h2>Attendance</h2>
+            <ul>
+                <li>Ali <em>Project Manager</em> </li>
+                <li>Rena</li>
+                <li>Jake</li>
+                <li>Alex</li>
+                <li>Ruth</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Introductions </li>
+                <li>Review all due assignments for this week</li>
+                <li>Draft the Group Contract together</li>
+                <li>Plan a group bonding event</li>
+                <li>Create GitHub repo</li>
+                <li>Prep for first official team meeting</li>
+            </ol>
+        </section>
+        <hr>
+
+        <section id="unfinished-business">
+            <h2>Unfinished Business</h2>
+            <p><em>This is the team's first meeting, no prior items</em></p>
+        </section>
+        <hr>
+
+        <!-- ---- New Business ---- -->
+        <section id="new-business">
+            <h2>New Business</h2>
+            <div>
+                <h3>1. Group Contract</h3>
+                <p>The team agreed on core rules: <strong>24-hour response time</strong>, mandatory meeting attendance
+                </p>
+
+                <h3>2. Branding</h3>
+                <p>Team voted on the name </p>
+
+                <h3>3. Group Bonding Event</h3>
+                <p>Team voted for an <strong>Lunch</strong> at Tahini</p>
+
+                <h3>4. Meeting Prep</h3>
+                <p> Agenda will be posted at GitHub in advance</p>
+
+                <p>
+                    <span>Next meeting:</span> <strong>April 15, 2026 at 6:00 PM</strong> via
+                    <a href="https://zoom.us" target="_blank">Zoom</a>
+                </p>
+            </div>
+        </section>
+        <hr>
+
+
+        <section id="diagram">
+            <h2>Whiteboard Diagram</h2>
+            <p>Photo taken during the meeting of the brainstorming whiteboard:</p>
+            <img src="https://media.licdn.com/dms/image/v2/C5112AQFpZlxvutPcpQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1520108687620?e=2147483647&v=beta&t=1eCecgDy4UeYnS63hH3toVEJroG2hSdjOhCzAJFZ7TQ"
+                alt="brainstorming whiteboard" width="600">
+        </section>
+        <hr>
+
+        <section id="media">
+            <h2>Meeting Recordings</h2>
+
+            <h3>Audio Recording</h3>
+            <audio controls>
+                <source src="meeting.mp3" type="audio/mpeg">
+            </audio>
+            <br><br>
+            <h3>Video Recording</h3>
+            <video controls width="600">
+                <source src="video.mov" type="video/mp4">
+            </video>
+        </section>
+        <hr>
+
+        <section id="notes">
+            <h2>Additional Notes</h2>
+            <details>
+                <summary>Click to see the full list of action items</summary>
+                <ul>
+                    <li>finalize and share Group Contract</li>
+                    <li>edit and upload intro video</li>
+                    <li>confirm everyone has repo access</li>
+                    <li>first logo drafts in Figma</li>
+                </ul>
+            </details>
+        </section>
+        <hr>
+
+
+        <section id="form">
+            <h2>Team Meeting Feedback Form</h2>
+
+            <form>
+                <fieldset>
+                    <legend>Your Info</legend>
+
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g. Aisha Patel"><br><br>
+
+                    <label for="feedback-date">Date of Feedback:</label>
+                    <input type="date" id="feedback-date" name="feedback-date"><br><br>
+
+                    <label for="role">Your Role:</label>
+                    <select id="role" name="role">
+                        <option value="">-- Select a role --</option>
+                        <option value="pm">Project Manager</option>
+                        <option value="frontend">Frontend</option>
+                        <option value="backend">Backend</option>
+                        <option value="design">Design</option>
+                        <option value="other">Other</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>How was the meeting?</legend>
+
+                    <input type="radio" id="great" name="rating" value="great">
+                    <label for="great">Great</label><br>
+
+                    <input type="radio" id="okay" name="rating" value="okay">
+                    <label for="okay">Okay</label><br>
+
+                    <input type="radio" id="poor" name="rating" value="poor">
+                    <label for="poor">Could be better</label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Topics covered in this meeting:</legend>
+
+                    <input type="checkbox" id="contract" name="topics" value="contract">
+                    <label for="contract">Group Contract</label><br>
+
+                    <input type="checkbox" id="branding" name="topics" value="branding">
+                    <label for="branding">Branding &amp; Video</label><br>
+
+                    <input type="checkbox" id="bonding" name="topics" value="bonding">
+                    <label for="bonding">Bonding Event</label><br>
+
+                    <input type="checkbox" id="repo" name="topics" value="repo">
+                    <label for="repo">Repo &amp; Meeting Prep</label>
+
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Next Meeting Location</legend>
+                    <label for="location">Suggest a location:</label><br>
+                    <input type="text" id="location" name="location" list="location-options"
+                        placeholder="Type or pick one">
+                    <datalist id="location-options">
+                        <option value="CSE Building">
+                        <option value="Price Center">
+                        <option value="Geisel Library">
+                    </datalist>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Additional Comments</legend>
+                    <textarea name="comments" rows="4" cols="50"
+                        placeholder="Any thoughts or suggestions..."></textarea>
+                </fieldset>
+
+                <br>
+                <button type="submit">Submit Feedback</button>
+
+            </form>
+        </section>
+        <hr>
+
+    </main>
+    <footer>
+        <p>CSE 110 - Software Engineering </p>
+        <p><small> <i>This document is for internal team use only </i> </small></p>
+    </footer>
+
+
+
+
+</body>
+
+</html>
