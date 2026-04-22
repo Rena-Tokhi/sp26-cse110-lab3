@@ -26,7 +26,8 @@ h1 {
     color: white;
 }
 
-h2, h3 {
+h2,
+h3 {
     color: hsl(210, 40%, 25%);
     margin-bottom: 8px;
 }
@@ -73,7 +74,7 @@ a:active {
     gap: 10px;
     padding: 0;
     margin-top: 10px;
-    flex-grow: 1; 
+    flex-grow: 1;
 }
 
 .nav-links a {
@@ -110,15 +111,18 @@ a:active {
     position: relative;
 }
 
-.card > h2 {
+.card>h2 {
     border-bottom: 2px solid var(--blue);
     padding-bottom: 6px;
     margin-bottom: 12px;
 }
 
-.card {
-    & p { color: #444; }
-    & strong { color: var(--dark); }
+.card p {
+    color: #444;
+}
+
+.card strong {
+    color: var(--dark);
 }
 
 #meeting-info {
@@ -158,9 +162,17 @@ li.member:hover {
     font-weight: bold;
 }
 
-h3 ~ p { color: #666; }
-h3 + p { color: #333; }
-section p { color: #333; }
+h3~p {
+    color: #666;
+}
+
+h3+p {
+    color: #333;
+}
+
+section p {
+    color: #333;
+}
 
 .highlights {
     display: grid;
@@ -181,22 +193,39 @@ section p { color: #333; }
     min-height: 55px;
 }
 
-.highlight-box {
-    & h4 { font-size: 0.9rem; margin-bottom: 4px; }
-    & p { font-size: 0.8rem; color: #666; margin: 0; border: none; padding: 0; }
+.highlight-box h4 {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
 }
 
-.highlight-box:hover { background-color: #d5e9f7; }
+.highlight-box p {
+    font-size: 0.8rem;
+    color: #666;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
 
-.hidden-note { display: none; }
-.label-text { display: inline; }
+.highlight-box:hover {
+    background-color: #d5e9f7;
+}
+
+.hidden-note {
+    display: none;
+}
+
+.label-text {
+    display: inline;
+}
 
 a.zoom-link {
     font-weight: bold;
     text-decoration: underline;
 }
 
-p:hover { color: #222; }
+p:hover {
+    color: #222;
+}
 
 .meeting-img {
     width: 100%;
@@ -245,16 +274,43 @@ input[type="date"] {
     grid-column: 1 / -1;
 }
 
+/* nested selector example */
+.site-footer {
+    & p { color: rgba(255, 255, 255, 0.8); }
+}
+
 @media (max-width: 768px) {
-    .site-header { position: relative; }
-    h1 { font-size: 1.4rem; }
-    .main-content { width: 95%; }
-    .highlights { grid-template-columns: 1fr 1fr; }
-    .team-grid { grid-template-columns: 1fr 1fr; }
+    .site-header {
+        position: relative;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+
+    .main-content {
+        width: 95%;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 @media (max-width: 480px) {
-    h1 { font-size: 1.1rem; }
-    .highlights { grid-template-columns: 1fr; }
-    .submit-btn { width: 100%; }
+    h1 {
+        font-size: 1.1rem;
+    }
+
+    .highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .submit-btn {
+        width: 100%;
+    }
 }
