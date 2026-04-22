@@ -1,2 +1,3 @@
-# Lab 2 - Starter
-URL: https://rena-tokhi.github.io/Lab2_Starter/
+# sp26-cse110-lab3
+
+GitHub Pages site: https://Rena-Tokhi.github.io/sp26-cse110-lab3
